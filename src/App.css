@@ -1,7 +1,7 @@
 /* App.css */
 .navigation {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: flex-start;
   /* padding: 20px 40px; */
   background-color: transparent;
@@ -50,16 +50,16 @@
 }
 
 .main-content {
-  flex: 1; 
-  /* padding: 20px; */
+  flex: 1;
+  padding: 20px;
   box-sizing: border-box; /* Include padding in width */
-  margin-left: 0; 
+  margin-left: 0;
 }
 
 /* For smaller screens */
 @media (max-width: 768px) {
   .App {
-    flex-direction: column; 
+    flex-direction: column;
   }
   .navigation {
     padding: 10px 20px;
