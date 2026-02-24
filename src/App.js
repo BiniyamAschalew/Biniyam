@@ -21,12 +21,16 @@ const newsItems = [
     linkLabel: "Paper",
   },
   {
+    date: "Fall 2025",
+    text: "Selected as a Teaching Assistant for the AddisCoder Programming Summer Camp.",
+  },
+  {
     date: "Sep. 2025",
     text: "Started M.S. in Electrical Engineering at KAIST and continued in Data AI Lab under Prof. Jaemin Yoo.",
   },
   {
     date: "Aug. 2025",
-    text: "Graduated from KAIST with B.S. in Computer Science.",
+    text: "Graduated from KAIST with B.S. in Computer Science (Magna Cum Laude).",
   },
   {
     date: "Mar. 2025",
@@ -53,6 +57,10 @@ const newsItems = [
   {
     date: "Jun. 2024",
     text: "Joined KAIST Data AI Lab as a research intern.",
+  },
+  {
+    date: "Feb. 2024",
+    text: "Contributed as an AI Intern at Bastion Robotics, Inc.",
   },
   {
     date: "Jul. 2023",
@@ -100,31 +108,83 @@ const publications = [
   },
 ];
 
+const experience = [
+  {
+    role: "Researcher",
+    company: "KAIST Data AI Lab",
+    date: "Sep. 2025 – Present",
+    desc: "Advised by Prof. Jaemin Yoo.",
+  },
+  {
+    role: "Research Intern",
+    company: "KAIST Data AI Lab",
+    date: "Jun. 2024 – Aug. 2025",
+    desc: "Advised by Prof. Jaemin Yoo.",
+  },
+  {
+    role: "Research Intern",
+    company: "Networking and Mobile Systems Lab (NMSL)",
+    date: "Jul. 2023 – Present",
+    desc: "Advised by Prof. Sung-Ju Lee.",
+  },
+  {
+    role: "AI Intern",
+    company: "Bastion Robotics, Inc.",
+    date: "Dec. 2023 – Feb. 2024",
+    desc: "Developed a rule-based AI system to control NPCs and implemented character mechanics using the Unity game engine.",
+  },
+  {
+    role: "Machine Learning Intern",
+    company: "BFactory Inc.",
+    date: "Dec. 2022 – Feb. 2023",
+    desc: "Developed a makeup transfer feature using GAN models, designing custom metrics and data pipelines.",
+  },
+  {
+    role: "Undergraduate Researcher",
+    company: "Institute for Basic Science (IBS)",
+    date: "Dec. 2022 – Feb. 2023",
+    desc: "Advised by Prof. Meeyoung Cha. Analyzed satellite imagery for Venusian climate modeling using deep-learning.",
+  },
+];
+
+const education = [
+  {
+    degree: "M.S. in Electrical Engineering",
+    school: "Korea Advanced Institute of Science and Technology (KAIST)",
+    date: "Sep. 2025 – Present",
+  },
+  {
+    degree: "B.S. in Computer Science (Magna Cum Laude)",
+    school: "Korea Advanced Institute of Science and Technology (KAIST)",
+    date: "Mar. 2021 – Aug. 2025",
+  },
+];
+
 function SocialIcon({ type }) {
   if (type === "email") {
     return (
-      <svg viewBox="0 0 24 24" aria-hidden="true" className="w-6 h-6">
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="w-5 h-5">
         <path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h15A1.5 1.5 0 0 1 21 7.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16.5v-9Zm1.5 0L12 12.75 19.5 7.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     );
   }
   if (type === "github") {
     return (
-      <svg viewBox="0 0 24 24" aria-hidden="true" className="w-5 h-5">
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="w-4 h-4">
         <path fill="currentColor" d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.72-4.04-1.42-4.04-1.42-.54-1.38-1.33-1.75-1.33-1.75-1.08-.75.09-.73.09-.73 1.2.08 1.84 1.23 1.84 1.23 1.07 1.84 2.8 1.31 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.76.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.23v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .3" />
       </svg>
     );
   }
   if (type === "linkedin") {
     return (
-      <svg viewBox="0 0 24 24" aria-hidden="true" className="w-5 h-5">
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="w-4 h-4">
         <path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.04c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" />
       </svg>
     );
   }
   if (type === "scholar") {
     return (
-      <svg viewBox="0 0 24 24" aria-hidden="true" className="w-6 h-6">
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="w-5 h-5">
         <path d="m12 4.5 9 4.5-9 4.5L3 9l9-4.5ZM7.5 11.25v4.35c0 1.16 2.01 2.1 4.5 2.1s4.5-.94 4.5-2.1v-4.35" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
         <path d="M21 9v4.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
@@ -143,8 +203,9 @@ function SocialIcon({ type }) {
 
 function SocialLink({ href, label, iconType }) {
   return (
-    <a href={href} title={label} aria-label={label} target={href.startsWith("mailto:") ? undefined : "_blank"} rel={href.startsWith("mailto:") ? undefined : "noopener noreferrer"}>
+    <a href={href} title={label} aria-label={label} className="social-link" target={href.startsWith("mailto:") ? undefined : "_blank"} rel={href.startsWith("mailto:") ? undefined : "noopener noreferrer"}>
       <SocialIcon type={iconType} />
+      <span className="social-label">{label}</span>
     </a>
   );
 }
@@ -161,29 +222,20 @@ function renderAuthors(authorText) {
 
 function Home() {
   return (
-    <div className="page-animate">
-      <section className="section block-card">
+    <div className="page-animate page-content default-spacing">
+      <section className="section">
         <h2 className="section-title">About Me</h2>
         <div className="text-content">
           <p>
-            I am a current M.S. student in Electrical Engineering at{" "}
-            <a href="https://www.kaist.ac.kr/en/" target="_blank" rel="noreferrer">KAIST</a>
-            , and I am a researcher in the{" "}
-            <a href="https://dai.kaist.ac.kr/" target="_blank" rel="noreferrer">Data AI Lab</a>{" "}
-            advised by{" "}
-            <a href="https://jaeminyoo.github.io/" target="_blank" rel="noreferrer">Prof. Jaemin Yoo</a>.
-            Previously, I received my B.S. degree in Computer Science from KAIST, where I was a recipient of the College of Engineering Leadership Award for Research Excellence.
+            I am a current M.S. student in Electrical Engineering at KAIST, and I am a researcher in the Data AI Lab advised by Prof. Jaemin Yoo.
           </p>
           <p>
             My research interests lie in <strong>Deep learning theory</strong>, <strong>transfer learning</strong>, and <strong>graph machine learning</strong>. I am broadly interested in expanding and adapting models for real-world dynamic environments.
           </p>
-          <p>
-            In addition to my work at the Data AI Lab, my background includes diverse experiences developing adaptive machine learning systems, having interned as an undergraduate researcher at the Networking and Mobile Systems Lab (NMSL), BFactory, and Bastion Robotics.
-          </p>
         </div>
       </section>
 
-      <section className="section block-card">
+      <section className="section">
         <h2 className="section-title">News</h2>
         <div className="news-container">
           {newsItems.map((item, idx) => (
@@ -207,8 +259,8 @@ function Home() {
 
 function Publications() {
   return (
-    <div className="page-animate">
-      <section className="section block-card">
+    <div className="page-animate page-content default-spacing">
+      <section className="section">
         <h2 className="section-title">Publications</h2>
         <div className="pub-list">
           {publications.map((paper, idx) => (
@@ -222,6 +274,43 @@ function Publications() {
                     {item.label}
                   </a>
                 ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function CV() {
+  return (
+    <div className="page-animate page-content default-spacing">
+      <section className="section">
+        <h2 className="section-title">Education</h2>
+        <div className="timeline">
+          {education.map((edu, idx) => (
+            <div key={idx} className="timeline-item">
+              <div className="timeline-date">{edu.date}</div>
+              <div className="timeline-content">
+                <h3 className="timeline-role">{edu.school}</h3>
+                <div className="timeline-company">{edu.degree}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section">
+        <h2 className="section-title">Experience</h2>
+        <div className="timeline">
+          {experience.map((exp, idx) => (
+            <div key={idx} className="timeline-item">
+              <div className="timeline-date">{exp.date}</div>
+              <div className="timeline-content">
+                <h3 className="timeline-role">{exp.role}</h3>
+                <div className="timeline-company">{exp.company}</div>
+                {exp.desc && <div className="timeline-desc">{exp.desc}</div>}
               </div>
             </div>
           ))}
@@ -250,6 +339,7 @@ function App() {
           <div className="nav-links">
             <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>About</NavLink>
             <NavLink to="/publications" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Publications</NavLink>
+            <NavLink to="/cv" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>CV</NavLink>
           </div>
         </div>
       </nav>
@@ -269,30 +359,31 @@ function App() {
         {/* LEFT SIDEBAR (Desktop only) */}
         <aside className="sidebar">
           <div className="sidebar-inner">
-            <div className="profile-wrapper">
-              <div className="profile-photo">
-                <img src={profileImage} alt="Biniyam Aschalew Tolera" />
-              </div>
-              <h1 className="name">Biniyam Aschalew</h1>
-              <p className="sidebar-title">M.S. Student</p>
-              <p className="sidebar-affiliation">KAIST Electrical Engineering<br />Data AI Lab</p>
+            <div className="profile-photo">
+              <img src={profileImage} alt="Biniyam Aschalew Tolera" />
+            </div>
 
-              <div className="profile-icons">
-                <SocialLink href={links.email} label="Email" iconType="email" />
-                <SocialLink href={links.scholar} label="Google Scholar" iconType="scholar" />
-                <SocialLink href={links.github} label="GitHub" iconType="github" />
-                <SocialLink href={links.linkedin} label="LinkedIn" iconType="linkedin" />
-                <SocialLink href={links.cv} label="CV" iconType="cv" />
-              </div>
+            <h1 className="name">Biniyam Aschalew</h1>
+            <p className="sidebar-title">M.S. Student</p>
+            <p className="sidebar-affiliation">KAIST Electrical Engineering<br />Data AI Lab</p>
+
+            {/* Sidebar quick links, no circles just simple text or minimal icon+text */}
+            <div className="profile-links-list">
+              <SocialLink href={links.email} label="Email" iconType="email" />
+              <SocialLink href={links.scholar} label="Google Scholar" iconType="scholar" />
+              <SocialLink href={links.github} label="GitHub" iconType="github" />
+              <SocialLink href={links.linkedin} label="LinkedIn" iconType="linkedin" />
+              <SocialLink href={links.cv} label="CV" iconType="cv" />
             </div>
           </div>
         </aside>
 
-        {/* RIGHT MAIN CONTENT AREA - DYNAMIC */}
+        {/* RIGHT MAIN CONTENT AREA */}
         <main className="content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/publications" element={<Publications />} />
+            <Route path="/cv" element={<CV />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>

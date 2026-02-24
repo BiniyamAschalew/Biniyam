@@ -1,22 +1,18 @@
-/* Airy, wide, modern layout inspired by typical academic profiles */
+/* Pure academic layout: merged, flat design with no contrasting color blocks */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-  --primary-color: #3b82f6;
-  /* A soft modern blue */
-  --primary-hover: #2563eb;
-  --bg-body: #f1f5f9;
-  /* Web-like grayish airy background */
-  --bg-surface: #ffffff;
+  --primary-color: #2563eb;
+  /* Academic blue */
+  --primary-hover: #1d4ed8;
+  --bg-page: #f8f9fa;
+  /* Unified minimalist background */
   --text-main: #334155;
   --text-heading: #0f172a;
   --text-muted: #64748b;
   --border-color: #e2e8f0;
   --nav-bg: #1e293b;
-  /* Dark sophisticated nav */
   --font-base: 'Roboto', -apple-system, system-ui, sans-serif;
-  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 ::-moz-selection {
@@ -36,7 +32,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--bg-body);
+  background-color: var(--bg-page);
   color: var(--text-main);
   font-family: var(--font-base);
   line-height: 1.6;
@@ -57,114 +53,100 @@ a:hover {
 
 /* Page Animation */
 .page-animate {
-  animation: fadein 0.3s ease-in-out;
+  animation: fadein 0.2s ease-in;
 }
 
 @keyframes fadein {
   from {
     opacity: 0;
-    transform: translateY(5px);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
 
-/* 
-  TOP NAVIGATION BAR
-*/
+/* TOP NAVIGATION BAR */
 .top-nav {
   background-color: var(--nav-bg);
-  box-shadow: var(--shadow-md);
   position: sticky;
   top: 0;
   z-index: 50;
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 1000px;
+  /* Reduced width for more compact, academic reading column */
   margin: 0 auto;
   padding: 0 40px;
-  height: 64px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .nav-brand {
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 700;
+  color: #f8fafc;
+  font-size: 1.15rem;
+  font-weight: 500;
   letter-spacing: 0.02em;
 }
 
 .nav-links {
   display: flex;
-  gap: 8px;
+  gap: 16px;
 }
 
 .nav-link {
   color: #94a3b8;
   font-weight: 500;
   font-size: 0.95rem;
-  padding: 8px 16px;
-  border-radius: 6px;
-  transition: all 0.2s;
+  padding: 6px 12px;
+  border-radius: 4px;
 }
 
 .nav-link:hover {
-  text-decoration: none;
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .nav-link.active {
   color: #fff;
-  background-color: var(--primary-color);
 }
 
 
 /* Base Layout Config */
 .layout {
   display: flex;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 40px auto 0;
-  min-height: calc(100vh - 104px);
+  min-height: calc(100vh - 96px);
 }
 
-/* 
-  SIDEBAR (Fixed positioning mimicking the template's left side) 
-*/
+/* SIDEBAR (Unified appearance) */
 .sidebar {
-  width: 300px;
+  width: 260px;
   position: relative;
   flex-shrink: 0;
 }
 
 .sidebar-inner {
   position: sticky;
-  top: 104px;
-  /* Accounting for 64px navbar + 40px spacing */
-  padding: 0 20px 40px 20px;
+  top: 96px;
+  padding: 0 20px 40px 0;
   display: flex;
   flex-direction: column;
 }
 
-.profile-wrapper {
-  text-align: center;
-}
-
 .profile-photo {
-  width: 160px;
-  height: 160px;
-  margin: 0 auto 20px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 24px;
   border-radius: 50%;
+  /* Move from heavy circles to subtle academic squares/rounded boxes */
   overflow: hidden;
-  box-shadow: var(--shadow-md);
-  border: 4px solid var(--bg-surface);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 .profile-photo img {
@@ -174,16 +156,16 @@ a:hover {
 }
 
 .name {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-heading);
-  margin: 0 0 8px;
-  letter-spacing: -0.02em;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
 }
 
 .sidebar-title {
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-size: 1.05rem;
+  font-weight: 500;
   color: var(--text-main);
   margin: 0 0 4px;
 }
@@ -195,30 +177,29 @@ a:hover {
   margin: 0 0 24px;
 }
 
-.profile-icons {
+/* Flattened sidebar links */
+.profile-links-list {
   display: flex;
+  flex-direction: column;
   gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
-.profile-icons a {
+.social-link {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--bg-surface);
-  color: var(--text-muted);
-  box-shadow: var(--shadow-sm);
-  transition: all 0.2s ease;
+  gap: 10px;
+  color: var(--text-main);
+  font-size: 0.95rem;
+  font-weight: 400;
 }
 
-.profile-icons a:hover {
-  transform: translateY(-2px);
+.social-link:hover {
+  text-decoration: none;
   color: var(--primary-color);
-  box-shadow: var(--shadow-md);
+}
+
+.w-4 {
+  width: 16px;
 }
 
 .w-5 {
@@ -227,6 +208,10 @@ a:hover {
 
 .w-6 {
   width: 24px;
+}
+
+.h-4 {
+  height: 16px;
 }
 
 .h-5 {
@@ -241,16 +226,17 @@ a:hover {
 /* Mobile Header */
 .mobile-header {
   display: none;
-  background: var(--bg-surface);
-  padding: 20px;
+  background: var(--bg-page);
+  padding: 20px 0;
+  margin: 0 20px;
   border-bottom: 1px solid var(--border-color);
   align-items: center;
-  gap: 20px;
+  gap: 16px;
 }
 
 .profile-photo-mobile {
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -262,9 +248,10 @@ a:hover {
 }
 
 .name-mobile {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   margin: 0 0 4px;
   color: var(--text-heading);
+  font-weight: 700;
 }
 
 .affiliation-mobile {
@@ -274,34 +261,29 @@ a:hover {
 }
 
 
-/* 
-  MAIN CONTENT
-*/
+/* MAIN CONTENT (Flattened, no cards) */
 .content {
   flex: 1;
-  padding: 0 20px 80px 40px;
-  max-width: 860px;
+  padding: 0 0 80px 40px;
 }
 
-.section {
-  margin-bottom: 40px;
+.page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  /* Breathing room between sections instead of card margins */
 }
 
-.block-card {
-  background: var(--bg-surface);
-  border-radius: 12px;
-  padding: 32px 40px;
-  box-shadow: var(--shadow-sm);
-}
-
+/* Headings completely flattened into the text flow */
 .section-title {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-heading);
   margin-top: 0;
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid var(--bg-body);
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+  /* Subtle divider */
 }
 
 .text-content p {
@@ -323,27 +305,21 @@ a:hover {
 .news-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .news-item {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   align-items: baseline;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.news-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
+  padding-bottom: 12px;
 }
 
 .news-date {
   font-weight: 500;
   color: var(--text-muted);
   font-size: 0.95rem;
-  min-width: 90px;
+  min-width: 85px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   flex-shrink: 0;
@@ -365,7 +341,7 @@ a:hover {
 .pub-list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 28px;
 }
 
 .pub-entry {
@@ -376,28 +352,27 @@ a:hover {
 .paper-title {
   font-size: 1.15rem;
   font-weight: 700;
-  margin: 0 0 6px;
+  margin: 0 0 4px;
   color: var(--text-heading);
   line-height: 1.4;
 }
 
 .paper-authors {
   font-size: 1rem;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   color: var(--text-main);
 }
 
 .highlight-author {
   font-weight: 600;
   color: var(--text-heading);
-  border-bottom: 2px solid var(--border-color);
 }
 
 .paper-venue {
   font-size: 1rem;
   font-style: italic;
   color: var(--text-muted);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .paper-links {
@@ -408,22 +383,73 @@ a:hover {
 .link-button {
   display: inline-flex;
   align-items: center;
-  padding: 4px 14px;
-  border-radius: 9999px;
-  background: var(--bg-body);
+  padding: 2px 0;
   color: var(--primary-color);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  border: 1px solid transparent;
+}
+
+.link-button::before {
+  content: "[\00A0";
+  color: var(--text-muted);
+}
+
+.link-button::after {
+  content: "\00A0]";
+  color: var(--text-muted);
 }
 
 .link-button:hover {
-  text-decoration: none;
-  background: #e0f2fe;
+  text-decoration: underline;
 }
 
+/* TIMELINE (Experience & Education inside CV tab) */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+}
+
+.timeline-date {
+  flex-shrink: 0;
+  width: 140px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding-top: 2px;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 2px;
+  color: var(--text-heading);
+}
+
+.timeline-company {
+  font-size: 1rem;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.timeline-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+
 /* Responsive Adjustments */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .nav-container {
     padding: 0 20px;
     height: auto;
@@ -442,12 +468,11 @@ a:hover {
 
   .layout {
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .sidebar {
     display: none;
-    /* Hide large sidebar on mobile */
   }
 
   .mobile-header {
@@ -455,22 +480,28 @@ a:hover {
   }
 
   .content {
-    padding: 20px;
+    padding: 32px 20px;
     max-width: 100%;
   }
 
-  .block-card {
-    padding: 24px 20px;
-    border-radius: 8px;
-  }
-
+  .timeline-item,
   .news-item {
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
   }
 
+  .timeline-item:last-child,
+  .news-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .timeline-date,
   .news-date {
     width: auto;
     font-size: 0.9rem;
+    color: var(--text-heading);
   }
 }
