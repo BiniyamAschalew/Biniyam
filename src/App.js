@@ -32,7 +32,7 @@ const newsItems = [
     text: "Graduated from KAIST with B.S. in Computer Science (Magna Cum Laude).",
   },
   {
-    date: "2025",
+    date: "2025", 
     text: "Paper accepted at ACM SenSys 2025.",
     link: "https://arxiv.org/abs/2404.15305",
     linkLabel: "Paper",
