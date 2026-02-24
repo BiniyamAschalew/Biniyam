@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Biniyam/static/css/main.ba4849a2.css",
-    "main.js": "/Biniyam/static/js/main.1c0eeb6c.js",
+    "main.css": "/Biniyam/static/css/main.5558124b.css",
+    "main.js": "/Biniyam/static/js/main.c9fba66c.js",
     "static/media/Bini.jpeg": "/Biniyam/static/media/Bini.7768dda2619ba9cfa092.jpeg",
     "index.html": "/Biniyam/index.html",
-    "main.ba4849a2.css.map": "/Biniyam/static/css/main.ba4849a2.css.map",
-    "main.1c0eeb6c.js.map": "/Biniyam/static/js/main.1c0eeb6c.js.map"
+    "main.5558124b.css.map": "/Biniyam/static/css/main.5558124b.css.map",
+    "main.c9fba66c.js.map": "/Biniyam/static/js/main.c9fba66c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba4849a2.css",
-    "static/js/main.1c0eeb6c.js"
+    "static/css/main.5558124b.css",
+    "static/js/main.c9fba66c.js"
   ]
 }
