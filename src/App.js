@@ -100,66 +100,6 @@ const publications = [
   },
 ];
 
-const experience = [
-  {
-    role: "Researcher",
-    company: "KAIST Data AI Lab",
-    date: "Sep. 2025 – Present",
-    desc: "Advised by Prof. Jaemin Yoo.",
-  },
-  {
-    role: "Research Intern",
-    company: "KAIST Data AI Lab",
-    date: "Jun. 2024 – Aug. 2025",
-    desc: "Advised by Prof. Jaemin Yoo.",
-  },
-  {
-    role: "Research Intern",
-    company: "Networking and Mobile Systems Lab (NMSL)",
-    date: "Jul. 2023 – Present",
-    desc: "Advised by Prof. Sung-Ju Lee.",
-  },
-  {
-    role: "AI Intern",
-    company: "Bastion Robotics, Inc.",
-    date: "Dec. 2023 – Feb. 2024",
-    desc: "Developed a rule-based AI system to control NPCs and implemented character mechanics using the Unity game engine.",
-  },
-  {
-    role: "Machine Learning Intern",
-    company: "BFactory Inc.",
-    date: "Dec. 2022 – Feb. 2023",
-    desc: "Developed a makeup transfer feature using GAN models, designing custom metrics and data pipelines.",
-  },
-  {
-    role: "Undergraduate Researcher",
-    company: "Institute for Basic Science (IBS)",
-    date: "Dec. 2022 – Feb. 2023",
-    desc: "Advised by Prof. Meeyoung Cha. Analyzed satellite imagery for Venusian climate modeling using deep-learning.",
-  },
-];
-
-const education = [
-  {
-    degree: "M.S. in Electrical Engineering",
-    school: "Korea Advanced Institute of Science and Technology (KAIST)",
-    date: "Sep. 2025 – Present",
-  },
-  {
-    degree: "B.S. in Computer Science",
-    school: "Korea Advanced Institute of Science and Technology (KAIST)",
-    date: "Mar. 2021 – Aug. 2025",
-  },
-];
-
-const honors = [
-  { title: "CoE Leadership Award (Research Excellence)", date: "Mar. 2025" },
-  { title: "Daewoong AI and Big Data Global Scholarship", date: "Mar. 2024" },
-  { title: "KAIST Full Scholarship", date: "Mar. 2021" },
-  { title: "Hanseong-Sonjaehan Scholarship Award", date: "Mar. 2021" },
-  { title: "MindPlus National Mathematics Olympiad Gold Medalist", date: "Aug. 2019" },
-];
-
 function SocialIcon({ type }) {
   if (type === "email") {
     return (
@@ -190,12 +130,15 @@ function SocialIcon({ type }) {
       </svg>
     );
   }
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="w-5 h-5">
-      <path d="M8.25 3h6l4.5 4.5v12A1.5 1.5 0 0 1 17.25 21h-10.5a1.5 1.5 0 0 1-1.5-1.5v-15A1.5 1.5 0 0 1 6.75 3h1.5Zm6 0v4.5h4.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M8.25 12.75h7.5M8.25 16.5h5.25" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-    </svg>
-  );
+  if (type === "cv") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="w-5 h-5">
+        <path d="M19.5 21v-3a3 3 0 0 0-3-3H7.5a3 3 0 0 0-3 3v3h15Z" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M12 11.25a3.75 3.75 0 1 0 0-7.5 3.75 3.75 0 0 0 0 7.5Z" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    );
+  }
+  return null;
 }
 
 function SocialLink({ href, label, iconType }) {
@@ -225,16 +168,17 @@ function Home() {
           <p>
             I am a current M.S. student in Electrical Engineering at{" "}
             <a href="https://www.kaist.ac.kr/en/" target="_blank" rel="noreferrer">KAIST</a>
-            , and I am a researcher in{" "}
+            , and I am a researcher in the{" "}
             <a href="https://dai.kaist.ac.kr/" target="_blank" rel="noreferrer">Data AI Lab</a>{" "}
             advised by{" "}
             <a href="https://jaeminyoo.github.io/" target="_blank" rel="noreferrer">Prof. Jaemin Yoo</a>.
+            Previously, I received my B.S. degree in Computer Science from KAIST, where I was a recipient of the College of Engineering Leadership Award for Research Excellence.
           </p>
           <p>
-            My research interests lie in <strong>Deep learning theory</strong>, <strong>transfer learning</strong>, and <strong>graph machine learning</strong>. I am broadly interested in expanding adapting models for real-world dynamic environments.
+            My research interests lie in <strong>Deep learning theory</strong>, <strong>transfer learning</strong>, and <strong>graph machine learning</strong>. I am broadly interested in expanding and adapting models for real-world dynamic environments.
           </p>
           <p>
-            Previously, I received my B.S. degree in Computer Science from KAIST, and I worked with both Data AI Lab and Networking and Mobile Systems Lab on various research projects.
+            In addition to my work at the Data AI Lab, my background includes diverse experiences developing adaptive machine learning systems, having interned as an undergraduate researcher at the Networking and Mobile Systems Lab (NMSL), BFactory, and Bastion Robotics.
           </p>
         </div>
       </section>
@@ -287,55 +231,6 @@ function Publications() {
   );
 }
 
-function CV() {
-  return (
-    <div className="page-animate">
-      <section className="section block-card">
-        <h2 className="section-title">Education</h2>
-        <div className="timeline">
-          {education.map((edu, idx) => (
-            <div key={idx} className="timeline-item">
-              <div className="timeline-date">{edu.date}</div>
-              <div className="timeline-content">
-                <h3 className="timeline-role">{edu.school}</h3>
-                <div className="timeline-company">{edu.degree}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="section block-card">
-        <h2 className="section-title">Experience</h2>
-        <div className="timeline">
-          {experience.map((exp, idx) => (
-            <div key={idx} className="timeline-item">
-              <div className="timeline-date">{exp.date}</div>
-              <div className="timeline-content">
-                <h3 className="timeline-role">{exp.role}</h3>
-                <div className="timeline-company">{exp.company}</div>
-                {exp.desc && <div className="timeline-desc">{exp.desc}</div>}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="section block-card">
-        <h2 className="section-title">Honors & Awards</h2>
-        <ul className="honors-list">
-          {honors.map((honor, idx) => (
-            <li key={idx} className="honor-item">
-              <span className="honor-title">{honor.title}</span>
-              <span className="honor-date">{honor.date}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </div>
-  );
-}
-
 function ScrollToTop() {
   const { pathname } = useLocation();
   React.useEffect(() => {
@@ -355,7 +250,6 @@ function App() {
           <div className="nav-links">
             <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>About</NavLink>
             <NavLink to="/publications" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Publications</NavLink>
-            <NavLink to="/cv" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>CV</NavLink>
           </div>
         </div>
       </nav>
@@ -399,7 +293,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/publications" element={<Publications />} />
-            <Route path="/cv" element={<CV />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
