@@ -9,107 +9,141 @@ const links = {
   email: "mailto:binasc@kaist.ac.kr",
   github: "https://github.com/BiniyamAschalew/",
   linkedin: "https://www.linkedin.com/in/biniyamaschalew/",
-  scholar: "https://scholar.google.com/scholar?q=Biniyam+Aschalew+Tolera",
+  scholar: "https://scholar.google.com/citations?user=hfBdqYAAAAAJ&hl=en&oi=ao",
   cv: `${process.env.PUBLIC_URL}/Biniyam_Aschalew_CV.pdf`,
 };
 
 const newsItems = [
   {
     date: "Aug. 2026",
-    text: "Attended KDD 2026 in Jeju, South Korea.",
+    text: "I attended KDD 2026 in Jeju, South Korea, and served as a student volunteer.",
+    link: "https://kdd2026.kdd.org/",
+    linkLabel: "Conference",
   },
   {
     date: "Jul. 2026",
-    text: "Attended ICML 2026 in Seoul, South Korea.",
+    text: "I attended ICML 2026 in Seoul, South Korea, and served as a reviewer for the Graph Foundation Models Workshop.",
+    link: "https://icml.cc/Conferences/2026",
+    linkLabel: "Conference",
+  },
+  {
+    date: "Apr. 2026",
+    text: "I attended DASFAA 2026 in Jeju, South Korea (April 27–30).",
+    link: "https://dasfaa2026.github.io/",
+    linkLabel: "Conference",
   },
   {
     date: "Jan. 2026",
-    text: "Paper accepted for an oral presentation at WWW 2026.",
+    text: "Our paper PULSE was accepted at WWW 2026 and selected for an oral presentation.",
     link: "https://arxiv.org/pdf/2601.14720",
     linkLabel: "Paper",
   },
   {
     date: "Nov. 2025",
-    text: "Our EMNLP 2024 paper, “By My Eyes,” won a Qualcomm Innovation Fellowship.",
-    link: "https://arxiv.org/abs/2407.10385",
-    linkLabel: "Paper",
+    text: "Our paper By My Eyes was recognized by Qualcomm Innovation Fellowship Korea 2025, awarded to first author Hyungjun Yoon.",
+    link: "https://www.qualcomm.com/research/university-relations/innovation-fellowship/2025-south-korea",
+    linkLabel: "Recognition",
   },
   {
     date: "Fall 2025",
-    text: "Selected as a Teaching Assistant for the AddisCoder Programming Summer Camp.",
+    text: "I served as a teaching assistant at the AddisCoder Programming Summer Camp in Ethiopia.",
   },
   {
     date: "Sep. 2025",
-    text: "Started M.S. in Electrical Engineering at KAIST and continued in Data AI Lab under Prof. Jaemin Yoo.",
+    text: "I started my M.S. in Electrical Engineering at KAIST, continuing my research in Data AI Lab with Prof. Jaemin Yoo.",
   },
   {
     date: "Aug. 2025",
-    text: "Graduated from KAIST with B.S. in Computer Science (Magna Cum Laude).",
+    text: "I graduated magna cum laude from KAIST with a B.S. in Computer Science and a minor in Industrial Engineering.",
   },
   {
     date: "Mar. 2025",
-    text: "Received the CoE Leadership Award for Research Excellence.",
+    text: "I received the KAIST College of Engineering Leadership Award for Research Excellence.",
   },
   {
     date: "2025",
-    text: "Paper accepted at ACM SenSys 2025.",
+    text: "Our paper SelfReplay was accepted at ACM SenSys 2025.",
     link: "https://arxiv.org/abs/2404.15305",
     linkLabel: "Paper",
   },
   {
     date: "2024",
-    text: "Paper accepted at EMNLP 2024.",
+    text: "Our paper By My Eyes was accepted to the main conference at EMNLP 2024.",
     link: "https://arxiv.org/abs/2407.10385",
     linkLabel: "Paper",
   },
   {
     date: "2024",
-    text: "Paper presented at Korean Software Conference (KSC 2024).",
+    text: "Our work on synthetic data for data-free knowledge distillation appeared at KSC 2024.",
     link: "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE12042032&width=1690",
     linkLabel: "Paper",
   },
   {
     date: "Jun. 2024",
-    text: "Joined KAIST Data AI Lab as a research intern.",
+    text: "I joined KAIST Data AI Lab as a research intern.",
+  },
+  {
+    date: "Mar. 2024",
+    text: "I received the Daewoong AI and Big Data Global Scholarship.",
   },
   {
     date: "Feb. 2024",
-    text: "Contributed as an AI Intern at Bastion Robotics, Inc.",
+    text: "I completed my AI internship at Bastion Robotics, developing NPC behavior and character mechanics in Unity.",
   },
   {
     date: "Jul. 2023",
-    text: "Joined Networking and Mobile Systems Lab (NMSL) as a research intern.",
+    text: "I joined KAIST’s Networking and Mobile Systems Laboratory as a research intern.",
+  },
+  {
+    date: "Mar. 2021",
+    text: "I began my undergraduate studies at KAIST with the KAIST Full Scholarship and the Hanseong-Sonjaehan Scholarship.",
   },
 ];
 
 const publications = [
   {
-    title:
-      "Socially-Aware User Representation Modeling Toward Parameter-Efficient Graph Collaborative Filtering",
-    authors:
-      "Doyun Choi, Cheonwoo Lee, Biniyam Aschalew Tolera, Taewook Ham, Chanyoung Park, Jaemin Yoo",
-    venue: "WWW 2026",
-    distinction: "Oral presentation",
-    links: [{ label: "Paper", url: "https://arxiv.org/pdf/2601.14720" }],
+    id: "M1",
+    title: "OPAL: Operator Alignment for Unsupervised Graph Domain Adaptation",
+    authors: "Biniyam Aschalew Tolera, Akotet Yeshaw Tesema, Cheonwoo Lee, Dooho Lee, Aikta Arya, Jaemin Yoo",
+    venue: "Manuscript submitted to NeurIPS 2026",
+    contribution: "Developed operator alignment to address structural shifts that degrade graph neural network transfer.",
+    links: [],
   },
   {
+    id: "C1",
+    title:
+      "PULSE: Socially-Aware User Representation Modeling Toward Parameter-Efficient Graph Collaborative Filtering",
+    authors:
+      "Doyun Choi*, Cheonwoo Lee*, Biniyam Aschalew Tolera, Taewook Ham, Chanyoung Park, Jaemin Yoo",
+    venue: "WWW 2026",
+    distinction: "Oral presentation",
+    contribution: "Implemented and evaluated model ablations to assess the contribution of individual components to recommendation performance.",
+    links: [{ label: "Paper", url: "https://arxiv.org/pdf/2601.14720" }, { label: "Code", url: "https://github.com/cdy9777/PULSE" }],
+  },
+  {
+    id: "C2",
     title:
       "SelfReplay: Adapting Self-Supervised Sensory Models via Adaptive Meta-Task Replay",
     authors:
       "Hyungjun Yoon, Jaehyun Kwak, Biniyam Aschalew Tolera, Gaole Dai, Mo Li, Taesik Gong, Kimin Lee, Sung-Ju Lee",
     venue: "ACM SenSys 2025",
+    contribution: "Contributed to ideation for cross-domain and user adaptation; implemented baselines and designed and ran evaluations of self-supervised meta-learning.",
     links: [{ label: "Paper", url: "https://arxiv.org/abs/2404.15305" }],
   },
   {
+    id: "C3",
     title:
       "By My Eyes: Grounding Multimodal Large Language Models with Sensor Data via Visual Prompting",
     authors:
       "Hyungjun Yoon, Biniyam Aschalew Tolera, Taesik Gong, Kimin Lee, Sung-Ju Lee",
-    venue: "EMNLP 2024",
-    distinction: "Qualcomm Innovation Fellowship Winner",
-    links: [{ label: "Paper", url: "https://arxiv.org/abs/2407.10385" }],
+    venue: "EMNLP 2024 · Main conference",
+    distinction: "Paper recognized by Qualcomm Innovation Fellowship Korea 2025",
+    distinctionNote: "Fellowship recipient: Hyungjun Yoon (first author).",
+    contribution: "Contributed to visual-prompting ideation and led the full experimental evaluation, including sensor-data pipelines, baselines, and studies of prompt design and sequence-length effects.",
+    links: [{ label: "Paper", url: "https://aclanthology.org/2024.emnlp-main.133/" }, { label: "Code", url: "https://github.com/diamond264/ByMyEyes" }, { label: "Recognition", url: "https://www.qualcomm.com/research/university-relations/innovation-fellowship/2025-south-korea" }],
   },
   {
+    id: "C4",
     title: "Leveraging Synthetic Data for Data-Free Knowledge Distillation",
     authors:
       "Biniyam Aschalew Tolera, Bryan Nathanael Wijaya, Minhajur Rahman Chowdhury Mahim",
@@ -126,22 +160,28 @@ const publications = [
 
 const experience = [
   {
-    role: "Researcher",
+    role: "M.S. Student / Researcher",
     company: "KAIST Data AI Lab",
     date: "Sep. 2025 – Present",
-    desc: "Advised by Prof. Jaemin Yoo.",
+    desc: "Advised by Prof. Jaemin Yoo. Developing OPAL for structural graph domain adaptation and investigating scalable in-context learning with tabular foundation models.",
   },
   {
     role: "Research Intern",
     company: "KAIST Data AI Lab",
     date: "Jun. 2024 – Aug. 2025",
-    desc: "Advised by Prof. Jaemin Yoo.",
+    desc: "Advised by Prof. Jaemin Yoo. Research in graph machine learning, transfer learning, and parameter-efficient recommendation.",
+  },
+  {
+    role: "Individual Study",
+    company: "Complexity and Real Computation Laboratory, KAIST",
+    date: "Mar. 2024 – Aug. 2024",
+    desc: "Advised by Prof. Martin Ziegler. Designed experiments using the Hofstadter test to evaluate LLM agents in a virtual world.",
   },
   {
     role: "Research Intern",
     company: "Networking and Mobile Systems Lab (NMSL)",
-    date: "Jul. 2023 – Present",
-    desc: "Advised by Prof. Sung-Ju Lee.",
+    date: "Jul. 2023 – Jun. 2024",
+    desc: "Advised by Prof. Sung-Ju Lee. Contributed to By My Eyes (EMNLP 2024) and SelfReplay (SenSys 2025), studying multimodal sensor understanding and adaptation of self-supervised sensing models.",
   },
   {
     role: "AI Intern",
@@ -153,13 +193,13 @@ const experience = [
     role: "Machine Learning Intern",
     company: "BFactory Inc.",
     date: "Dec. 2022 – Feb. 2023",
-    desc: "Developed a makeup transfer feature using GAN models, designing custom metrics and data pipelines.",
+    desc: "Developed an EleGANt-based makeup-transfer feature, including quality metrics, data pipelines, and fine-tuning; adapted diffusion models for personalized advertisement generation.",
   },
   {
-    role: "Undergraduate Researcher",
+    role: "Individual Study",
     company: "Institute for Basic Science (IBS)",
     date: "Dec. 2022 – Feb. 2023",
-    desc: "Advised by Prof. Meeyoung Cha. Analyzed satellite imagery for Venusian climate modeling using deep-learning.",
+    desc: "Advised by Prof. Meeyoung Cha. Analyzed satellite imagery for Venusian climate prediction and evaluated deep learning models for weather classification.",
   },
 ];
 
@@ -167,13 +207,42 @@ const education = [
   {
     degree: "M.S. in Electrical Engineering",
     school: "Korea Advanced Institute of Science and Technology (KAIST)",
-    date: "Sep. 2025 – Present",
+    date: "Sep. 2025 – Jul. 2027 (expected)",
+    desc: "Advisor: Prof. Jaemin Yoo · Cumulative GPA: 3.92/4.3",
   },
   {
     degree: "B.S. in Computer Science (Magna Cum Laude)",
     school: "Korea Advanced Institute of Science and Technology (KAIST)",
     date: "Mar. 2021 – Aug. 2025",
+    desc: "Minor in Industrial Engineering · Cumulative GPA: 3.87/4.3",
   },
+];
+
+const honors = [
+  { date: "Mar. 2025", title: "KAIST College of Engineering Leadership Award (Research Excellence)", desc: "Selected for outstanding research by a college-wide committee from department-nominated undergraduates." },
+  { date: "Mar. 2024", title: "Daewoong AI and Big Data Global Scholarship" },
+  { date: "Mar. 2021", title: "KAIST Full Scholarship" },
+  { date: "Mar. 2021", title: "Hanseong-Sonjaehan Scholarship Award" },
+  { date: "Aug. 2019", title: "MindPlus National Mathematics Olympiad — Gold Medal", desc: "National mathematics competition in Ethiopia." },
+];
+
+const teaching = [
+  { date: "Spring 2026", title: "AI Foundation Models: Theory and Practice (EE499)", desc: "Teaching Assistant, KAIST" },
+  { date: "Fall 2025", title: "AddisCoder Programming Summer Camp", desc: "Teaching Assistant, Ethiopia" },
+  { date: "Fall 2022", title: "Introduction to Algorithms (CS300)", desc: "Teaching Assistant, KAIST" },
+  { date: "Spring 2022", title: "Introduction to Programming (CS101)", desc: "Teaching Assistant, KAIST" },
+];
+
+const participation = [
+  { date: "Aug. 9–13, 2026", title: "KDD 2026 · Jeju, South Korea", desc: "I attended the conference and served as a student volunteer.", url: "https://kdd2026.kdd.org/" },
+  { date: "Jul. 6–11, 2026", title: "ICML 2026 · Seoul, South Korea", desc: "I attended the conference and served as a reviewer for the ICML 2026 Graph Foundation Models Workshop.", url: "https://icml.cc/Conferences/2026" },
+  { date: "Apr. 27–30, 2026", title: "DASFAA 2026 · Jeju, South Korea", desc: "I attended the 31st International Conference on Database Systems for Advanced Applications.", url: "https://dasfaa2026.github.io/" },
+];
+
+const projects = [
+  { date: "Spring 2024", title: "Synthetic Data for Zero-Shot Knowledge Distillation", desc: "KAIST CS570 course project, published at KSC 2024. Generated class-specific synthetic data by optimizing noise inputs to maximize teacher logits, enabling student training without the original training data.", url: "https://github.com/BiniyamAschalew/KD570" },
+  { date: "Summer 2023", title: "Lang ReCAPTCHA", desc: "Built a KoBERT-based CAPTCHA for low-resource language data collection and user authentication at the Junction Asia hackathon.", url: "https://github.com/Akotet08/LangCaptcha/tree/main" },
+  { date: "Spring 2023", title: "Fake Import Declaration Detection", desc: "Placed 3rd of 190+ participants in the KAIST CS360 / Korean Customs Service competition, using model ensembles and data-processing pipelines." },
 ];
 
 function SocialIcon({ type }) {
@@ -243,10 +312,13 @@ function Home() {
         <h2 className="section-title">About Me</h2>
         <div className="text-content">
           <p>
-            I am a current M.S. student in Electrical Engineering at KAIST, and I am a researcher in the Data AI Lab advised by Prof. Jaemin Yoo.
+            I am an M.S. student in Electrical Engineering at KAIST, advised by <a href="https://jaeminyoo.github.io/" target="_blank" rel="noreferrer">Prof. Jaemin Yoo</a> in <a href="https://dai.kaist.ac.kr/" target="_blank" rel="noreferrer">Data AI Lab</a>. I expect to graduate in July 2027. I received my B.S. in Computer Science from KAIST in 2025, graduating magna cum laude with a minor in Industrial Engineering.
           </p>
           <p>
-            My research interests lie in <strong>Deep learning theory</strong>, <strong>transfer learning</strong>, and <strong>graph machine learning</strong>. I am broadly interested in expanding and adapting models for real-world dynamic environments.
+            I study <strong>robust and transferable machine learning</strong>, <strong>graph representation learning</strong>, and <strong>foundation models for structured data</strong>. My work asks how models can transfer across changes in data structure and distribution.
+          </p>
+          <p>
+            I developed OPAL for structural graph domain adaptation. I am also investigating scalable in-context learning with tabular foundation models across tabular, time-series, and graph data, including learned context selection to make large context sets more efficient.
           </p>
         </div>
       </section>
@@ -277,24 +349,27 @@ function Publications() {
   return (
     <div className="page-animate page-content default-spacing">
       <section className="section">
-        <h2 className="section-title">Publications</h2>
+        <h2 className="section-title">Publications &amp; Manuscripts</h2>
+        <p className="section-note">* Equal contribution. </p>
         <div className="pub-list">
-          {publications.map((paper, idx) => (
-            <div className="pub-entry" key={idx}>
-              <h3 className="paper-title">{paper.title}</h3>
+          {publications.map((paper) => (
+            <article className="pub-entry" key={paper.id} id={paper.id}>
+              <h3 className="paper-title"><span className="paper-id">[{paper.id}]</span> {paper.title}</h3>
               <div className="paper-authors">{renderAuthors(paper.authors)}</div>
               <div className="paper-venue">{paper.venue}</div>
               {paper.distinction && (
                 <div className="paper-distinction">{paper.distinction}</div>
               )}
-              <div className="paper-links">
+              {paper.distinctionNote && <div className="paper-note">{paper.distinctionNote}</div>}
+              {paper.contribution && <p className="paper-contribution"><strong>My contribution:</strong> {paper.contribution}</p>}
+              {paper.links.length > 0 && <div className="paper-links">
                 {paper.links.map((item, i) => (
                   <a className="link-button" href={item.url} target="_blank" rel="noreferrer" key={i}>
                     {item.label}
                   </a>
                 ))}
-              </div>
-            </div>
+              </div>}
+            </article>
           ))}
         </div>
       </section>
@@ -302,9 +377,29 @@ function Publications() {
   );
 }
 
+function TimelineSection({ title, items }) {
+  return (
+    <section className="section">
+      <h2 className="section-title">{title}</h2>
+      <div className="timeline">
+        {items.map((item) => (
+          <div className="timeline-item" key={`${item.title}-${item.date}`}>
+            <div className="timeline-date">{item.date}</div>
+            <div className="timeline-content">
+              <h3 className="timeline-role">{item.url ? <a href={item.url} target="_blank" rel="noreferrer">{item.title}</a> : item.title}</h3>
+              {item.desc && <div className="timeline-desc">{item.desc}</div>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function CV() {
   return (
     <div className="page-animate page-content default-spacing">
+      <div className="cv-download"><a className="link-button" href={links.cv} target="_blank" rel="noreferrer">Download CV (PDF)</a><span>Updated September 2026</span></div>
       <section className="section">
         <h2 className="section-title">Education</h2>
         <div className="timeline">
@@ -314,6 +409,7 @@ function CV() {
               <div className="timeline-content">
                 <h3 className="timeline-role">{edu.school}</h3>
                 <div className="timeline-company">{edu.degree}</div>
+                <div className="timeline-desc">{edu.desc}</div>
               </div>
             </div>
           ))}
@@ -334,6 +430,15 @@ function CV() {
             </div>
           ))}
         </div>
+      </section>
+      <TimelineSection title="Honors & Awards" items={honors} />
+      <TimelineSection title="Teaching" items={teaching} />
+      <TimelineSection title="Academic Service & Conference Participation" items={participation} />
+      <TimelineSection title="Selected Projects" items={projects} />
+      <section className="section">
+        <h2 className="section-title">Technical Skills</h2>
+        <p><strong>Programming:</strong> Python, C, Java, SQL, MATLAB</p>
+        <p><strong>Libraries and tools:</strong> PyTorch, TensorFlow, scikit-learn, NumPy, pandas, Git, Linux</p>
       </section>
     </div>
   );
@@ -371,7 +476,13 @@ function App() {
           </div>
           <div>
             <h1 className="name-mobile">Biniyam Aschalew</h1>
-            <p className="affiliation-mobile">KAIST EE &middot; Data AI Lab</p>
+            <p className="affiliation-mobile">M.S. Student &middot; KAIST Data AI Lab</p>
+            <div className="mobile-profile-links">
+              <SocialLink href={links.email} label="Email" iconType="email" />
+              <SocialLink href={links.scholar} label="Scholar" iconType="scholar" />
+              <SocialLink href={links.github} label="GitHub" iconType="github" />
+              <SocialLink href={links.cv} label="CV" iconType="cv" />
+            </div>
           </div>
         </header>
 
