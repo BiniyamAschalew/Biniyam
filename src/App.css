@@ -380,6 +380,13 @@ a:hover {
   gap: 12px;
 }
 
+.paper-distinction {
+  color: var(--text-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
 .link-button {
   display: inline-flex;
   align-items: center;

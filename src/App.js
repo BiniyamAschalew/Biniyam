@@ -15,9 +15,23 @@ const links = {
 
 const newsItems = [
   {
+    date: "Aug. 2026",
+    text: "Attended KDD 2026 in Jeju, South Korea.",
+  },
+  {
+    date: "Jul. 2026",
+    text: "Attended ICML 2026 in Seoul, South Korea.",
+  },
+  {
     date: "Jan. 2026",
-    text: "Paper accepted at WWW 2026.",
+    text: "Paper accepted for an oral presentation at WWW 2026.",
     link: "https://arxiv.org/pdf/2601.14720",
+    linkLabel: "Paper",
+  },
+  {
+    date: "Nov. 2025",
+    text: "Our EMNLP 2024 paper, “By My Eyes,” won a Qualcomm Innovation Fellowship.",
+    link: "https://arxiv.org/abs/2407.10385",
     linkLabel: "Paper",
   },
   {
@@ -75,6 +89,7 @@ const publications = [
     authors:
       "Doyun Choi, Cheonwoo Lee, Biniyam Aschalew Tolera, Taewook Ham, Chanyoung Park, Jaemin Yoo",
     venue: "WWW 2026",
+    distinction: "Oral presentation",
     links: [{ label: "Paper", url: "https://arxiv.org/pdf/2601.14720" }],
   },
   {
@@ -91,6 +106,7 @@ const publications = [
     authors:
       "Hyungjun Yoon, Biniyam Aschalew Tolera, Taesik Gong, Kimin Lee, Sung-Ju Lee",
     venue: "EMNLP 2024",
+    distinction: "Qualcomm Innovation Fellowship Winner",
     links: [{ label: "Paper", url: "https://arxiv.org/abs/2407.10385" }],
   },
   {
@@ -268,6 +284,9 @@ function Publications() {
               <h3 className="paper-title">{paper.title}</h3>
               <div className="paper-authors">{renderAuthors(paper.authors)}</div>
               <div className="paper-venue">{paper.venue}</div>
+              {paper.distinction && (
+                <div className="paper-distinction">{paper.distinction}</div>
+              )}
               <div className="paper-links">
                 {paper.links.map((item, i) => (
                   <a className="link-button" href={item.url} target="_blank" rel="noreferrer" key={i}>
