@@ -10,7 +10,7 @@ const links = {
   github: "https://github.com/BiniyamAschalew/",
   linkedin: "https://www.linkedin.com/in/biniyamaschalew/",
   scholar: "https://scholar.google.com/citations?user=hfBdqYAAAAAJ&hl=en&oi=ao",
-  cv: `${process.env.PUBLIC_URL}/Biniyam_Aschalew_CV.pdf`,
+  cv: `${process.env.PUBLIC_URL}/Biniyam_Aschalew_CV.pdf?v=212ff575`,
 };
 
 const newsItems = [
