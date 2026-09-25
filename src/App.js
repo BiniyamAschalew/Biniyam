@@ -16,13 +16,13 @@ const links = {
 const newsItems = [
   {
     date: "Aug. 2026",
-    text: "I am attending KDD 2026 in Jeju, South Korea, as a student volunteer.",
+    text: "I am attending KDD 2026 in Jeju, South Korea (student volunteer).",
     link: "https://kdd2026.kdd.org/",
     linkLabel: "Conference",
   },
   {
     date: "Jul. 2026",
-    text: "I am attending ICML 2026 in Seoul, South Korea, and serving as a reviewer for the Graph Foundation Models Workshop.",
+    text: "I am attending ICML 2026 in Seoul, South Korea (Graph Foundation Models Workshop reviewer).",
     link: "https://icml.cc/Conferences/2026",
     linkLabel: "Conference",
   },
@@ -34,23 +34,23 @@ const newsItems = [
   },
   {
     date: "Jan. 2026",
-    text: "Paper accepted at WWW 2026 (oral presentation).",
+    text: "Paper accepted to WWW 2026 (oral).",
     link: "https://arxiv.org/pdf/2601.14720",
     linkLabel: "Paper",
   },
   {
     date: "Nov. 2025",
-    text: "By My Eyes selected for Qualcomm Innovation Fellowship Korea 2025.",
+    text: "By My Eyes — Qualcomm Innovation Fellowship Korea 2025 winner.",
     link: "https://www.qualcomm.com/research/university-relations/innovation-fellowship/2025-south-korea",
     linkLabel: "Recognition",
   },
   {
     date: "Fall 2025",
-    text: "Selected as a Teaching Assistant for the AddisCoder Programming Summer Camp in Ethiopia.",
+    text: "Teaching Assistant at AddisCoder Programming Summer Camp, Ethiopia.",
   },
   {
     date: "Sep. 2025",
-    text: "Started M.S. in Electrical Engineering at KAIST and continued in Data AI Lab under Prof. Jaemin Yoo.",
+    text: "Started M.S. in Electrical Engineering at KAIST (Data AI Lab).",
   },
   {
     date: "Aug. 2025",
@@ -62,25 +62,25 @@ const newsItems = [
   },
   {
     date: "2025",
-    text: "Paper accepted at ACM SenSys 2025.",
+    text: "Paper accepted to ACM SenSys 2025.",
     link: "https://arxiv.org/abs/2404.15305",
     linkLabel: "Paper",
   },
   {
     date: "2024",
-    text: "Paper accepted at EMNLP 2024 (main conference).",
+    text: "Paper accepted to EMNLP 2024 (main).",
     link: "https://arxiv.org/abs/2407.10385",
     linkLabel: "Paper",
   },
   {
     date: "2024",
-    text: "Paper presented at Korean Software Conference (KSC 2024).",
+    text: "Paper presented at KSC 2024.",
     link: "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE12042032&width=1690",
     linkLabel: "Paper",
   },
   {
     date: "Jun. 2024",
-    text: "Joined KAIST Data AI Lab as a research intern.",
+    text: "Research internship at KAIST Data AI Lab.",
   },
   {
     date: "Mar. 2024",
@@ -88,15 +88,15 @@ const newsItems = [
   },
   {
     date: "Feb. 2024",
-    text: "Contributed as an AI Intern at Bastion Robotics, Inc.",
+    text: "AI internship at Bastion Robotics.",
   },
   {
     date: "Jul. 2023",
-    text: "Joined Networking and Mobile Systems Lab (NMSL) as a research intern.",
+    text: "Research internship at KAIST Networking and Mobile Systems Lab (NMSL).",
   },
   {
     date: "Mar. 2021",
-    text: "Started undergraduate studies at KAIST with the KAIST Full Scholarship and the Hanseong-Sonjaehan Scholarship.",
+    text: "Started B.S. at KAIST with the KAIST Full Scholarship and Hanseong-Sonjaehan Scholarship.",
   },
 ];
 
