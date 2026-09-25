@@ -315,10 +315,7 @@ function Home() {
             I am an M.S. student in Electrical Engineering at KAIST, advised by <a href="https://jaeminyoo.github.io/" target="_blank" rel="noreferrer">Prof. Jaemin Yoo</a> in <a href="https://dai.kaist.ac.kr/" target="_blank" rel="noreferrer">Data AI Lab</a>. I expect to graduate in July 2027. I received my B.S. in Computer Science from KAIST in 2025, graduating magna cum laude with a minor in Industrial Engineering.
           </p>
           <p>
-            I study <strong>robust and transferable machine learning</strong>, <strong>graph representation learning</strong>, and <strong>foundation models for structured data</strong>. My work asks how models can transfer across changes in data structure and distribution.
-          </p>
-          <p>
-            I developed OPAL for structural graph domain adaptation. I am also investigating scalable in-context learning with tabular foundation models across tabular, time-series, and graph data, including learned context selection to make large context sets more efficient.
+            My research interests include <strong>robust and transferable machine learning</strong>, <strong>graph representation learning</strong>, and <strong>foundation models for structured data</strong>. I am currently exploring efficient in-context learning for tabular, time-series, and graph data.
           </p>
         </div>
       </section>
