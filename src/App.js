@@ -34,69 +34,69 @@ const newsItems = [
   },
   {
     date: "Jan. 2026",
-    text: "Our paper PULSE was accepted at WWW 2026 and selected for an oral presentation.",
+    text: "Paper accepted at WWW 2026 (oral presentation).",
     link: "https://arxiv.org/pdf/2601.14720",
     linkLabel: "Paper",
   },
   {
     date: "Nov. 2025",
-    text: "Our paper By My Eyes was recognized by Qualcomm Innovation Fellowship Korea 2025, awarded to first author Hyungjun Yoon.",
+    text: "By My Eyes selected for Qualcomm Innovation Fellowship Korea 2025.",
     link: "https://www.qualcomm.com/research/university-relations/innovation-fellowship/2025-south-korea",
     linkLabel: "Recognition",
   },
   {
     date: "Fall 2025",
-    text: "I served as a teaching assistant at the AddisCoder Programming Summer Camp in Ethiopia.",
+    text: "Selected as a Teaching Assistant for the AddisCoder Programming Summer Camp in Ethiopia.",
   },
   {
     date: "Sep. 2025",
-    text: "I started my M.S. in Electrical Engineering at KAIST, continuing my research in Data AI Lab with Prof. Jaemin Yoo.",
+    text: "Started M.S. in Electrical Engineering at KAIST and continued in Data AI Lab under Prof. Jaemin Yoo.",
   },
   {
     date: "Aug. 2025",
-    text: "I graduated magna cum laude from KAIST with a B.S. in Computer Science and a minor in Industrial Engineering.",
+    text: "Graduated from KAIST with B.S. in Computer Science (Magna Cum Laude) and a minor in Industrial Engineering.",
   },
   {
     date: "Mar. 2025",
-    text: "I received the KAIST College of Engineering Leadership Award for Research Excellence.",
+    text: "Received the CoE Leadership Award for Research Excellence.",
   },
   {
     date: "2025",
-    text: "Our paper SelfReplay was accepted at ACM SenSys 2025.",
+    text: "Paper accepted at ACM SenSys 2025.",
     link: "https://arxiv.org/abs/2404.15305",
     linkLabel: "Paper",
   },
   {
     date: "2024",
-    text: "Our paper By My Eyes was accepted to the main conference at EMNLP 2024.",
+    text: "Paper accepted at EMNLP 2024 (main conference).",
     link: "https://arxiv.org/abs/2407.10385",
     linkLabel: "Paper",
   },
   {
     date: "2024",
-    text: "Our work on synthetic data for data-free knowledge distillation appeared at KSC 2024.",
+    text: "Paper presented at Korean Software Conference (KSC 2024).",
     link: "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE12042032&width=1690",
     linkLabel: "Paper",
   },
   {
     date: "Jun. 2024",
-    text: "I joined KAIST Data AI Lab as a research intern.",
+    text: "Joined KAIST Data AI Lab as a research intern.",
   },
   {
     date: "Mar. 2024",
-    text: "I received the Daewoong AI and Big Data Global Scholarship.",
+    text: "Received the Daewoong AI and Big Data Global Scholarship.",
   },
   {
     date: "Feb. 2024",
-    text: "I completed my AI internship at Bastion Robotics, developing NPC behavior and character mechanics in Unity.",
+    text: "Contributed as an AI Intern at Bastion Robotics, Inc.",
   },
   {
     date: "Jul. 2023",
-    text: "I joined KAIST’s Networking and Mobile Systems Laboratory as a research intern.",
+    text: "Joined Networking and Mobile Systems Lab (NMSL) as a research intern.",
   },
   {
     date: "Mar. 2021",
-    text: "I began my undergraduate studies at KAIST with the KAIST Full Scholarship and the Hanseong-Sonjaehan Scholarship.",
+    text: "Started undergraduate studies at KAIST with the KAIST Full Scholarship and the Hanseong-Sonjaehan Scholarship.",
   },
 ];
 
@@ -312,7 +312,7 @@ function Home() {
         <h2 className="section-title">About Me</h2>
         <div className="text-content">
           <p>
-            I am an M.S. student in Electrical Engineering at KAIST, advised by <a href="https://jaeminyoo.github.io/" target="_blank" rel="noreferrer">Prof. Jaemin Yoo</a> in <a href="https://dai.kaist.ac.kr/" target="_blank" rel="noreferrer">Data AI Lab</a>. I received my B.S. in Computer Science from KAIST in 2025, graduating magna cum laude with a minor in Industrial Engineering. My research interests include <strong>robust and transferable machine learning</strong>, <strong>graph representation learning</strong>, and <strong>foundation models for structured data</strong>. I am currently exploring efficient in-context learning for tabular, time-series, and graph data.
+            I am an M.S. student in Electrical Engineering at KAIST, advised by <a href="https://jaeminyoo.github.io/" target="_blank" rel="noreferrer">Prof. Jaemin Yoo</a> in <a href="https://dai.kaist.ac.kr/" target="_blank" rel="noreferrer">Data AI Lab</a>. I received my B.S. in Computer Science from KAIST in 2025, graduating magna cum laude with a minor in Industrial Engineering. My research interests lie in <strong>deep learning theory</strong>, <strong>transfer learning</strong>, and <strong>graph machine learning</strong>. I am currently exploring efficient in-context learning for tabular, time-series, and graph data.
           </p>
         </div>
       </section>
