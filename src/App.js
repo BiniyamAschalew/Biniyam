@@ -312,10 +312,7 @@ function Home() {
         <h2 className="section-title">About Me</h2>
         <div className="text-content">
           <p>
-            I am an M.S. student in Electrical Engineering at KAIST, advised by <a href="https://jaeminyoo.github.io/" target="_blank" rel="noreferrer">Prof. Jaemin Yoo</a> in <a href="https://dai.kaist.ac.kr/" target="_blank" rel="noreferrer">Data AI Lab</a>. I expect to graduate in July 2027. I received my B.S. in Computer Science from KAIST in 2025, graduating magna cum laude with a minor in Industrial Engineering.
-          </p>
-          <p>
-            My research interests include <strong>robust and transferable machine learning</strong>, <strong>graph representation learning</strong>, and <strong>foundation models for structured data</strong>. I am currently exploring efficient in-context learning for tabular, time-series, and graph data.
+            I am an M.S. student in Electrical Engineering at KAIST, advised by <a href="https://jaeminyoo.github.io/" target="_blank" rel="noreferrer">Prof. Jaemin Yoo</a> in <a href="https://dai.kaist.ac.kr/" target="_blank" rel="noreferrer">Data AI Lab</a>. I received my B.S. in Computer Science from KAIST in 2025, graduating magna cum laude with a minor in Industrial Engineering. My research interests include <strong>robust and transferable machine learning</strong>, <strong>graph representation learning</strong>, and <strong>foundation models for structured data</strong>. I am currently exploring efficient in-context learning for tabular, time-series, and graph data.
           </p>
         </div>
       </section>
