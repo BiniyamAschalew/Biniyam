@@ -16,19 +16,19 @@ const links = {
 const newsItems = [
   {
     date: "Aug. 2026",
-    text: "I attended KDD 2026 in Jeju, South Korea, and served as a student volunteer.",
+    text: "I am attending KDD 2026 in Jeju, South Korea, as a student volunteer.",
     link: "https://kdd2026.kdd.org/",
     linkLabel: "Conference",
   },
   {
     date: "Jul. 2026",
-    text: "I attended ICML 2026 in Seoul, South Korea, and served as a reviewer for the Graph Foundation Models Workshop.",
+    text: "I am attending ICML 2026 in Seoul, South Korea, and serving as a reviewer for the Graph Foundation Models Workshop.",
     link: "https://icml.cc/Conferences/2026",
     linkLabel: "Conference",
   },
   {
     date: "Apr. 2026",
-    text: "I attended DASFAA 2026 in Jeju, South Korea (April 27–30).",
+    text: "I am attending DASFAA 2026 in Jeju, South Korea (April 27–30).",
     link: "https://dasfaa2026.github.io/",
     linkLabel: "Conference",
   },
