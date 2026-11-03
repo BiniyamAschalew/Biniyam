@@ -10,7 +10,7 @@ const links = {
   github: "https://github.com/BiniyamAschalew/",
   linkedin: "https://www.linkedin.com/in/biniyamaschalew/",
   scholar: "https://scholar.google.com/citations?user=hfBdqYAAAAAJ&hl=en&oi=ao",
-  cv: `${process.env.PUBLIC_URL}/Biniyam_Aschalew_CV.pdf?v=212ff575`,
+  cv: `${process.env.PUBLIC_URL}/Biniyam_Aschalew_CV.pdf?v=cfee7160`,
 };
 
 const newsItems = [
@@ -397,7 +397,7 @@ function TimelineSection({ title, items }) {
 function CV() {
   return (
     <div className="page-animate page-content default-spacing">
-      <div className="cv-download"><a className="link-button" href={links.cv} target="_blank" rel="noreferrer">Download CV (PDF)</a><span>Updated September 2026</span></div>
+      <div className="cv-download"><a className="link-button" href={links.cv} target="_blank" rel="noreferrer">Download CV (PDF)</a><span>Updated November 2026</span></div>
       <section className="section">
         <h2 className="section-title">Education</h2>
         <div className="timeline">
