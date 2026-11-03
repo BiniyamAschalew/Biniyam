@@ -15,6 +15,10 @@ const links = {
 
 const newsItems = [
   {
+    date: "Nov. 2026",
+    text: "OPAL accepted to WSDM 2027.",
+  },
+  {
     date: "Aug. 2026",
     text: "I am attending KDD 2026 in Jeju, South Korea (student volunteer).",
     link: "https://kdd2026.kdd.org/",
@@ -102,10 +106,10 @@ const newsItems = [
 
 const publications = [
   {
-    id: "M1",
+    id: "C5",
     title: "OPAL: Operator Alignment for Unsupervised Graph Domain Adaptation",
     authors: "Biniyam Aschalew Tolera, Akotet Yeshaw Tesema, Cheonwoo Lee, Dooho Lee, Aikta Arya, Jaemin Yoo",
-    venue: "Manuscript submitted to NeurIPS 2026",
+    venue: "WSDM 2027",
     contribution: "Developed operator alignment to address structural shifts that degrade graph neural network transfer.",
     links: [],
   },
@@ -343,7 +347,7 @@ function Publications() {
   return (
     <div className="page-animate page-content default-spacing">
       <section className="section">
-        <h2 className="section-title">Publications &amp; Manuscripts</h2>
+        <h2 className="section-title">Publications</h2>
         <p className="section-note">* Equal contribution. </p>
         <div className="pub-list">
           {publications.map((paper) => (
